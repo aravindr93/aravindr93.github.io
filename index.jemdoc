@@ -13,7 +13,6 @@ LinkedIn: [http://in.linkedin.com/in/aravindr93] \n
 Email: aravindr@smail.iitm.ac.in \n
 ~~~
 
-~~~
 == Short Bio
 
 I am an undergraduate student at IIT Madras, affiliated with the [http://www.cse.iitm.ac.in/ RISE] lab and [http://cmsrv.iitm.ac.in/ilds/home/ ILDS] initiative. I have had wonderful experiences working with Profs. [http://www.cse.iitm.ac.in/~ravi/ Ravindran,] Shankar Narasimhan, and Sridharaumar. For my work on topological graph search in context of computational sustainability, I recieved the best undergraduate thesis award from IIT Madras. Previously, I was a summer intern at [https://www.imsc.res.in/ IMSc] CS and statistical physics with [http://www.imsc.res.in/~sitabhra/ Sitabhra Sinha]. From Autumn 2016, I'll be a PhD student at University of Washington with Profs. [https://homes.cs.washington.edu/~sham/ Sham Kakade] and [http://homes.cs.washington.edu/~svlevine/ Sergey Levine.] I also hope to collaborate with other researchers across EECS, statistics, and math.
@@ -22,4 +21,4 @@ My research interests are broad and include optimization, machine learning, netw
 - Theory and algorithms for interactive learning (RL, bandits, active etc.)
 - Deep reinforcement learning and computer vision for robotics
 - Common representation learning for multi-task, multi-view, and multi-modal settings
-~~~
+
