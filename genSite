@@ -1,0 +1,20 @@
+if [ ! -d "site_deploy" ]; then
+  mkdir site_deploy
+  mkdir site_deploy/images
+  mkdir site_deploy/files
+fi
+
+rm -rf site_deploy/*
+
+cp extra.css site_deploy/extra.css
+cp jemdoc.css site_deploy/jemdoc.css
+cp -aR images site_deploy/images
+cp -aR files site_deploy/files
+cp -aR css site_deploy/css
+
+jemdoc -c my-font-awesome.conf -o site_deploy/ index
+jemdoc -c my-font-awesome.conf -o site_deploy/ vita
+jemdoc -c my-font-awesome.conf -o site_deploy/ research
+jemdoc -c my-font-awesome.conf -o site_deploy/ courses
+jemdoc -c my-font-awesome.conf -o site_deploy/ publications
+
