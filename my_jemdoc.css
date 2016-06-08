@@ -1,46 +1,51 @@
-/* Modified default CSS file with jemdoc */
+/* Default css file for jemdoc. */
 
 table#tlayout {
     border: none;
     border-collapse: separate;
-    background: white;
+/*    background: white; */   /* Color of border between left side bar and main content */
+    background: #E5E4E2;
 }
 
 body {
+	background: white;   /* This is the color of background page - usually appears right of the main content */
 	background: #E5E4E2;  
-	font-family: Bitstream Charter, serif;
+	font-family: Georgia, serif;
 	padding-bottom: 8px;
-	margin: 0;
-	font-size: 1.025em;
+/*	font-size: 1.05em; */
 	width: 1050px;
+	margin: 0;
 }
 
 #layout-menu {
+/*	background: #BCC6CC;  */ /* Background color of left side bar */
 	background: #E5E4E2;
 	border: 1px solid #dddddd;
 	padding-top: 0.5em;
 	padding-left: 8px;
 	padding-right: 8px;
 	font-size: 1.05em;
+/*	width: auto; */
+	width: 125px;
 	white-space: nowrap;
     	text-align: left;
     	vertical-align: top;
-	width: 110px;
 }
 
 #layout-menu td {
-	background: #f4f4f4;
-    vertical-align: top;
+	background: #f4f4f4;  
+/*	background: black; */  /* Dont know what this is */
+    	vertical-align: top;
 }
 
 #layout-content {
 	padding-top: 0.0em;
 	padding-left: 1.0em;
 	padding-right: 1.0em;
-    border: none;
-    background: white;
-    text-align: left;
-    vertical-align: top;
+    	border: none;
+    	background: white;
+    	text-align: left;
+    	vertical-align: top;
 }
 
 #layout-menu a {
@@ -58,7 +63,8 @@ pre, tt {
 }
 
 a, a > tt {
-	color: #224b8d;
+	color: #224b8d; 
+/*	color: purple; */  /* This is the color of links */
 	text-decoration: none;
 }
 
@@ -67,11 +73,14 @@ a:hover {
 }
 
 #layout-menu a.current:link, #layout-menu a.current:visited {
-	color: #022b6d;
+/*	color: #022b6d;  */
+	color: black;
+/*	color: white;  This changes color of active tab in left side bar */
 	border-bottom: 1px gray solid;
 }
 #layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
-	color: #527bbd;
+	color: #527bbd; 
+/*	color: black; */   /* This changes link color in the side bar */
 	text-decoration: none;
 }
 #layout-menu a:hover {
@@ -119,7 +128,8 @@ strong {
 
 
 h1, h2, h3 {
-	color: #527bbd;
+	color: #527bbd; 
+/*	color: black;  This is the color of headings of all levels including site heading */
 	margin-top: 0.7em;
 	margin-bottom: 0.3em;
 	padding-bottom: 0.2em;
