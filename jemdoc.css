@@ -12,7 +12,9 @@ body {
 	padding-bottom: 8px;
 	margin: 0;
 	font-size: 1.025em;
-	width: 1050px;
+	width: 1030px;
+    max-width: 1030px;
+    min-width: 1030px;
 }
 
 #layout-menu {
@@ -164,6 +166,7 @@ div#footer {
 	padding-top: 0.1em;
 	margin-top: 4.0em;
 	color: #c0c0c0;
+    min-width:860px;
 }
 
 div#footer a {
@@ -366,4 +369,13 @@ img {
 table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
+}
+
+/* Adding some styling commands */
+#courses tr.r1 { font-weight: bold; }
+#courses tr.r2 { height: 20px; }
+.blank_row
+{
+    height: 10px !important; /* Overwrite any previous rules */
+    background-color: #FFFFFF;
 }

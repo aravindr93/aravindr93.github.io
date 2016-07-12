@@ -1,6 +1,33 @@
-# jemdoc: menu{MENU}{courses.html}, notime, analytics{UA-53678672-1}
-= Academic Coursework
+# jemdoc: menu{MENU}{courses.html}, notime, analytics{UA-79424948-1}
+= Selected Coursework
 
-TO DO. \n
-I am in the process of moving my website from a different location \n
-Kindly see [http://aravind93.wix.com/research here.]
+=== IIT Madras
+(* = graduate level course)
+- Machine Learning\*
+- Reinforcement Learning\*
+- Numerical Optimization\*
+- Multivariate Data Analysis\*
+- Time Series Analysis & SysID\*
+- Model Predictive Control\*
+- Numerical Linear Algebra
+- Finite Element Analysis
+
+=== Online
+- Design & Analysis of Algorithms (NPTEL)
+- Convex Optimization (EE364a Stanford)
+- Convolutional Neural Networks (CS231n Stanford)
+- Neural Networks for ML (Coursera)
+
+
+#~~~
+#{}{table}{courses}
+#Learning, Optimization, & Statistics | Computational & Applied Math ||
+#| ||
+#Machine Learning                     |   Numerical Linear Algebra       ||
+#Reinforcement Learning               |   Finite Element Analysis        ||  
+#Numerical Optimization               |   Nonlinear dynamics & Chaos     ||
+#Multivariate Data Analysis           |   Computational Fluid Dynamics   ||
+#Time Series Analysis                 |   Computational Systems Biology  ||
+#System Identification                |                                  ||
+#Model Predictive Control             |                                  
+#~~~

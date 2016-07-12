@@ -1,4 +1,4 @@
-# jemdoc: menu{MENU}{publications.html}
+# jemdoc: menu{MENU}{publications.html}, notime, analytics{UA-79424948-1}
 = Publications
 
 === Accepted
@@ -26,6 +26,6 @@ Research Area: Computational Sustainability, Artificial Intelligence, Discrete O
 
 I enjoy reading and following publications from the following venues: (\* = closest to my interests)
 - Machine Learning: NIPS\*, ICML\*, ICLR\*, AAAI
-- Optimization, Algorithms \& Theory: SIAM, SODA, COLT\*
+- Optimization, Algorithms \& Theory: SIAM, SODA, COLT
 - Signals \& Systems: IEEE (TAC, TSP, TIT), CDC\*, ACC
 - Robotics: ICRA

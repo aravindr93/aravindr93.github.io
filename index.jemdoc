@@ -1,8 +1,8 @@
-# jemdoc: menu{MENU}{index.html}
+# jemdoc: menu{MENU}{index.html}, notime, analytics{UA-79424948-1}
 = Aravind Rajeswaran
 
 ~~~
-{}{img_left}{dp.jpg}{Aravind Rajeswaran}{140px}{240px}{}
+{}{img_left}{./images/dp.jpg}{Aravind Rajeswaran}{140px}{240px}{}
 Undergraduate Research Assistant,\n
 [http://www.cse.iitm.ac.in/ Indian Institute of Technology Madras] \n
 
