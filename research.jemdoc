@@ -1,10 +1,10 @@
 # jemdoc: menu{MENU}{research.html}, notime, analytics{UA-79424948-1}
 = Research
 
-== Deep RL \+ +robustness+ \+ transfer \+ +multi-task+
-I'm interested in deep reinforcement learning methods that can train in simulation and transfer results seamlessly to the real world. One major hurdle to this grand goal is learning policies that are robust to and broadly competent for a range of models and parameters. RL and optimal control methods work very well in simulation. However, they exploit all structure and parameters in the simulator to produce optimal solutions for the specified set of parameters. In practice, we never know the true model parameters (eg mass, friction) or cost function (we need IRL) exactly. Thus, it is important to learn *"regularized"* policies in simulation to reduce sample complexity in the real world. 
+#== Deep RL \+ +robustness+ \+ transfer \+ +multi-task+
+#I'm interested in deep reinforcement learning methods that can train in simulation and transfer results seamlessly to the real world. One major hurdle to this grand goal is learning policies that are robust to and broadly competent for a range of models and parameters. RL and optimal control methods work very well in simulation. However, they exploit all structure and parameters in the simulator to produce optimal solutions for the specified set of parameters. In practice, we never know the true model parameters (eg mass, friction) or cost function (we need IRL) exactly. Thus, it is important to learn *"regularized"* policies in simulation to reduce sample complexity in the real world. 
 
-Very similar issues appear in transfer learning and multi-task learning where we want to learn regularized policies that capture the core common features of different tasks. My focus is on general algorithms predominantly in continuous settings which work out of the box without babysitting. This is work in progress with multiple collaborators.
+#Very similar issues appear in transfer learning and multi-task learning where we want to learn regularized policies that capture the core common features of different tasks. My focus is on general algorithms predominantly in continuous settings which work out of the box without babysitting. This is work in progress with multiple collaborators.
 
 == Safe Exploration for Reinforcement Learning
 Mentor: [http://www.cse.iitm.ac.in/~ravi/ Balaraman Ravindran] \n
