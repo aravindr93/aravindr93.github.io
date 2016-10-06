@@ -9,6 +9,12 @@ American Control Conference (ACC) 2016; [http://arxiv.org/abs/1511.06063 arxiv:1
 
 === arXiv preprints
 
+- *EPOpt: Learning Robust Neural Network Policies Using Model Ensembles* \n
+Aravind Rajeswaran, Sarvjeet Ghotra, Sergey Levine, Balaraman Ravindran \n
+arXiv preprint: [https://arxiv.org/abs/1610.01283 arxiv:1610.01283]
+- *Identifying Topology of Power Distribution Networks Based on Smart Meter Data* \n
+co-authored with Satya Jayadev, Nirav Bhatt, Ramkrishna Pasumarthy \n
+arXiv preprint: [https://arxiv.org/abs/1609.02678 arxiv:1609.02678]
 - *Network Topology Identification using PCA and its Graph Theoretic Interpretations* \n
 Aravind Rajeswaran, Shankar Narasimhan \n
 arXiv preprint: [https://arxiv.org/abs/1506.00438 arxiv:1506.00438v2]
@@ -26,6 +32,6 @@ Research Area: Computational Sustainability, Artificial Intelligence, Discrete O
 
 I enjoy reading and following publications from the following venues: (\* = closest to my interests)
 - Machine Learning: NIPS\*, ICML\*, ICLR\*, AAAI
-- Optimization, Algorithms \& Theory: SIAM, SODA, COLT
+- Optimization: SIAM, SODA, COLT
 - Signals \& Systems: IEEE (TAC, TSP, TIT), CDC\*, ACC
 - Robotics: ICRA
