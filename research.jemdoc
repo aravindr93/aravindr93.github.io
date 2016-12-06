@@ -1,22 +1,40 @@
 # jemdoc: menu{MENU}{research.html}, notime, analytics{UA-79424948-1}
 = Research
 
-#== Deep RL \+ +robustness+ \+ transfer \+ +multi-task+
-#I'm interested in deep reinforcement learning methods that can train in simulation and transfer results seamlessly to the real world. One major hurdle to this grand goal is learning policies that are robust to and broadly competent for a range of models and parameters. RL and optimal control methods work very well in simulation. However, they exploit all structure and parameters in the simulator to produce optimal solutions for the specified set of parameters. In practice, we never know the true model parameters (eg mass, friction) or cost function (we need IRL) exactly. Thus, it is important to learn *"regularized"* policies in simulation to reduce sample complexity in the real world. 
+== Active Research Questions
 
-#Very similar issues appear in transfer learning and multi-task learning where we want to learn regularized policies that capture the core common features of different tasks. My focus is on general algorithms predominantly in continuous settings which work out of the box without babysitting. This is work in progress with multiple collaborators.
-
-== Safe Exploration for Reinforcement Learning
-Mentor: [http://www.cse.iitm.ac.in/~ravi/ Balaraman Ravindran] \n
+=== Deep RL \+ +robustness+ \+ transfer \+ +multi-task+
+Mentors: [https://people.eecs.berkeley.edu/~svlevine/ Sergey Levine,] [http://www.cse.iitm.ac.in/~ravi/ Balaraman Ravindran,] [http://homes.cs.washington.edu/~todorov/ Emo Todorov] \n
 
 ~~~
-{}{img_left}{./images/safeRL.png}{}{350px}{240px}{}
-Traditionally RL assumes little knowledge about the environment, thus leading to a general and domain agnostic framework for learning and decision making. However, such a paradigm may not be appropriate in safety critical applications where it is impossible to recover from bad decisions. Also for many applications involving physical systems (eg chemical reactors, autonomous vehicles), one has to reason carefully about the well being of the system before sampling trajectories from the dynamics. 
+{}{img_left}{./images/safeRL.png}{}{300px}{210px}{}
+I'm interested in RL methods that can train in simulation and transfer results seamlessly to the real world. One major hurdle to this grand goal is learning policies that are robust to and broadly competent for a range of models and parameters. RL and optimal control methods are remarkably proficient in exploiting all structural regularities in the simulator, which hampers their robustness to modeling errors. Thus, it is important to learn *"regularized"* policies in simulation to reduce sample complexity in the real world. 
 
-We are combining ideas from robust control theory, risk aversion in economics, and Bayesian RL to generate trajectories which are informative for learning, yet safe. 
+Very similar issues appear in transfer learning and multi-task learning where we want to learn regularized policies that capture the core common features of different tasks. My focus is on general algorithms predominantly in continuous settings which work out of the box without babysitting. This is work in progress with multiple collaborators.
 ~~~
 
-== Hierarchical graph segmentation for anomaly detection
+=== Optimization issues in policy search
+Mentors: [https://homes.cs.washington.edu/~sham/ Sham Kakade,] [http://homes.cs.washington.edu/~todorov/ Emo Todorov] \n
+The two major challenges in getting policy gradient methods to work are: (a) low-variance estimates of the advantage function; (b) picking the correct step size. I'm addressing both of these questions both from a representation perspective as well as an optimization perspective.
+
+=== Model based Reinforcement Learning
+Mentors: [https://homes.cs.washington.edu/~sham/ Sham Kakade,] [http://homes.cs.washington.edu/~todorov/ Emo Todorov] \n
+Model-free RL algorithms, due to their high sample complexity, demand use of a simulator -- effectively making them model based. Considering that a simulator will be used anyways, how can we utilize the available explicit model information for fast policy search?
+
+#== Safe Exploration for Reinforcement Learning
+#Mentor: [http://www.cse.iitm.ac.in/~ravi/ Balaraman Ravindran] \n
+#
+#~~~
+#{}{img_left}{./images/safeRL.png}{}{350px}{240px}{}
+#Traditionally RL assumes little knowledge about the environment, thus leading to a general and domain agnostic framework for learning and decision making. However, such a paradigm may not be appropriate in safety critical applications where it is impossible to recover from bad decisions. Also for many applications involving physical systems (eg chemical reactors, autonomous vehicles), one has to reason carefully about the well being of the system before sampling trajectories from the dynamics. 
+#
+#We are combining ideas from robust control theory, risk aversion in economics, and Bayesian RL to generate trajectories which are informative for learning, yet safe. 
+#~~~
+
+
+== Previous Projects
+
+=== Hierarchical graph segmentation for anomaly detection
 Mentors: [http://www.cse.iitm.ac.in/~ravi/ Balaraman Ravindran,] Shankar Narasimhan, Sridharakumar Narasimhan \n
 
 ~~~
@@ -28,7 +46,7 @@ Detecting these anomalies requires a mix of pre-installed on-board sensors and u
 We have reported results on benchmark water networks. The method is much more general, and we are currently working on publishing a generalized algorithm that works for most infrastructure systems.
 ~~~
 
-== Network Topology Identification
+=== Network Topology Identification
 Mentor: Shankar Narasimhan \n
 
 ~~~

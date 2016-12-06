@@ -2,7 +2,7 @@
 = Aravind Rajeswaran
 
 ~~~
-{}{img_left}{./images/dp.jpg}{Aravind Rajeswaran}{140px}{240px}{}
+{}{img_left}{./images/dp_new.jpg}{Aravind Rajeswaran}{160px}{210px}{}
 Machine Learning PhD student,\n
 [https://www.cs.washington.edu/research/ml University of Washington Seattle] \n
 
@@ -15,9 +15,9 @@ Email: aravraj@cs.washington.edu \n
 
 == Short Bio
 
-I am a PhD student at UW working on deep reinforcement learning with [https://homes.cs.washington.edu/~sham/ Sham Kakade], [http://homes.cs.washington.edu/~todorov/ Emo Todorov], and [http://homes.cs.washington.edu/~svlevine/ Sergey Levine.] I'm also interested in aspects of computer vision and learning of predictive models now popular as intuitive physics. Previously, I was a student at IIT Madras with [http://www.cse.iitm.ac.in/~ravi/ Balaraman Ravindran,] and received the best undergraduate thesis award. Before switching focus to AI, I worked in statistical physics with [http://www.imsc.res.in/~sitabhra/ Sitabhra Sinha.]
+I am a PhD student at UW working on machine learning, optimization, and deep RL with [https://homes.cs.washington.edu/~sham/ Sham Kakade,] [http://homes.cs.washington.edu/~todorov/ Emo Todorov,] and [https://people.eecs.berkeley.edu/~svlevine/ Sergey Levine.] I'm also interested in aspects of computer vision, and learning predictive models of dynamical systems -- also called intuitive physics and system ID. Previously, I was a student at IIT Madras with [http://www.cse.iitm.ac.in/~ravi/ Balaraman Ravindran,] and received the best undergraduate thesis award. Before switching focus to AI, I worked in statistical physics of complex networks with [http://www.imsc.res.in/~sitabhra/ Sitabhra Sinha.]
 
-My research interests are broad and include many areas of EECS and applied math like: deep learning, reinforcement learning, optimization, statistical physics, and dynamical systems. Current research directions are:
-- Deep RL and computer vision for robotics
-- Multi-task and transfer learning in RL and beyond
-- Intuitive physics and learning of predictive models for planning and control
+My research interests are broad and include many areas of applied math like: optimization, (deep/machine) learning, optimal control, statistical physics, and dynamical systems. Current research directions are:
+- Policy optimization using natural gradients and Newton-CG
+- Reconciling policy search with trajectory optimization (specifically, iLQG and DDP)
+- Learning intuitive models of physics from video data

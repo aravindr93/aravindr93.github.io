@@ -31,14 +31,22 @@ try {
 <div id="toptitle">
 <h1>Research</h1>
 </div>
-<h2>Safe Exploration for Reinforcement Learning</h2>
-<p>Mentor: <a href="http://www.cse.iitm.ac.in/~ravi/">Balaraman Ravindran</a> <br /></p>
+<h2>Active Research Questions</h2>
+<h3>Deep RL + <tt>robustness</tt> + transfer + <tt>multi-task</tt></h3>
+<p>Mentors: <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine,</a> <a href="http://www.cse.iitm.ac.in/~ravi/">Balaraman Ravindran,</a> <a href="http://homes.cs.washington.edu/~todorov/">Emo Todorov</a> <br /></p>
 <table class="imgtable"><tr><td>
-<img src="./images/safeRL.png" alt="" width="350px" height="240px" />&nbsp;</td>
-<td align="left"><p>Traditionally RL assumes little knowledge about the environment, thus leading to a general and domain agnostic framework for learning and decision making. However, such a paradigm may not be appropriate in safety critical applications where it is impossible to recover from bad decisions. Also for many applications involving physical systems (eg chemical reactors, autonomous vehicles), one has to reason carefully about the well being of the system before sampling trajectories from the dynamics. </p>
-<p>We are combining ideas from robust control theory, risk aversion in economics, and Bayesian RL to generate trajectories which are informative for learning, yet safe. </p>
+<img src="./images/safeRL.png" alt="" width="300px" height="210px" />&nbsp;</td>
+<td align="left"><p>I'm interested in RL methods that can train in simulation and transfer results seamlessly to the real world. One major hurdle to this grand goal is learning policies that are robust to and broadly competent for a range of models and parameters. RL and optimal control methods are remarkably proficient in exploiting all structural regularities in the simulator, which hampers their robustness to modeling errors. Thus, it is important to learn <b>&ldquo;regularized&rdquo;</b> policies in simulation to reduce sample complexity in the real world. </p>
+<p>Very similar issues appear in transfer learning and multi-task learning where we want to learn regularized policies that capture the core common features of different tasks. My focus is on general algorithms predominantly in continuous settings which work out of the box without babysitting. This is work in progress with multiple collaborators.</p>
 </td></tr></table>
-<h2>Hierarchical graph segmentation for anomaly detection</h2>
+<h3>Optimization issues in policy search</h3>
+<p>Mentors: <a href="https://homes.cs.washington.edu/~sham/">Sham Kakade,</a> <a href="http://homes.cs.washington.edu/~todorov/">Emo Todorov</a> <br />
+The two major challenges in getting policy gradient methods to work are: (a) low-variance estimates of the advantage function; (b) picking the correct step size. I'm addressing both of these questions both from a representation perspective as well as an optimization perspective.</p>
+<h3>Model based Reinforcement Learning</h3>
+<p>Mentors: <a href="https://homes.cs.washington.edu/~sham/">Sham Kakade,</a> <a href="http://homes.cs.washington.edu/~todorov/">Emo Todorov</a> <br />
+Model-free RL algorithms, due to their high sample complexity, demand use of a simulator &ndash; effectively making them model based. Considering that a simulator will be used anyways, how can we utilize the available explicit model information for fast policy search?</p>
+<h2>Previous Projects</h2>
+<h3>Hierarchical graph segmentation for anomaly detection</h3>
 <p>Mentors: <a href="http://www.cse.iitm.ac.in/~ravi/">Balaraman Ravindran,</a> Shankar Narasimhan, Sridharakumar Narasimhan <br /></p>
 <table class="imgtable"><tr><td>
 <img src="./images/hgs.png" alt="" width="350px" height="300px" />&nbsp;</td>
@@ -46,7 +54,7 @@ try {
 <p>Detecting these anomalies requires a mix of pre-installed on-board sensors and use of additional sensors in query on demand fashion. We have developed an algorithm for solving the optimal sequence of queries needed to find the anomaly with minimum probes/queries.</p>
 <p>We have reported results on benchmark water networks. The method is much more general, and we are currently working on publishing a generalized algorithm that works for most infrastructure systems.</p>
 </td></tr></table>
-<h2>Network Topology Identification</h2>
+<h3>Network Topology Identification</h3>
 <p>Mentor: Shankar Narasimhan <br /></p>
 <table class="imgtable"><tr><td>
 <img src="./images/reconstruction.png" alt="" width="280px" height="300px" />&nbsp;</td>
@@ -55,7 +63,7 @@ try {
 </td></tr></table>
 <div id="footer">
 <div id="footer-text">
-Page generated 2016-07-28, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2016-12-04, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </td>

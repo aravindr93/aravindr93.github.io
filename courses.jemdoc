@@ -1,6 +1,11 @@
 # jemdoc: menu{MENU}{courses.html}, notime, analytics{UA-79424948-1}
 = Selected Coursework
 
+=== University of Washington
+- Machine Learning (CSE546, Aut 2016)
+- Neural control of movement (CSE529, Win 2017)
+- Seminars on ML, Vision, Robotics
+
 === IIT Madras
 (* = graduate level course)
 - Machine Learning\*
