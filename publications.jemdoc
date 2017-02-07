@@ -3,16 +3,15 @@
 
 === Accepted
 
+- *EPOpt: Learning Robust Neural Network Policies Using Model Ensembles* \n
+Aravind Rajeswaran, Sarvjeet Ghotra, Balaraman Ravindran, Sergey Levine  \n
+International Conference on Learning Representations (ICLR) 2017; [https://arxiv.org/abs/1610.01283 arxiv:1610.01283]
 - *A Novel Approach for Phase Identification in Smart Grids Using Graph Theory \n and Principal Component Analysis* \n
 Satya Jayadev P, Aravind Rajeswaran, Nirav P Bhatt, Ramkrishna Pasumarthy \n
 American Control Conference (ACC) 2016; [http://arxiv.org/abs/1511.06063 arxiv:1511.06063]
 
 === arXiv preprints
 
-- *EPOpt: Learning Robust Neural Network Policies Using Model Ensembles* \n
-Aravind Rajeswaran, Sarvjeet Ghotra, Balaraman Ravindran, Sergey Levine  \n
-arXiv preprint: [https://arxiv.org/abs/1610.01283 arxiv:1610.01283] \n
-(Accepted for presentation in NIPS 2016 DeepRL workshop; Under review at ICLR)
 - *Identifying Topology of Power Distribution Networks Based on Smart Meter Data* \n
 co-authored with Satya Jayadev, Nirav Bhatt, Ramkrishna Pasumarthy \n
 arXiv preprint: [https://arxiv.org/abs/1609.02678 arxiv:1609.02678]

@@ -1,14 +1,17 @@
-# jemdoc: menu{MENU}{publications.html}
+# jemdoc: menu{MENU}{publications.html}, notime, analytics{UA-79424948-1}
 = Publications
 
 === Accepted
 
-- *A Novel Approach for Phase Identification in Smart Grids Using Graph Theory and Principal Component Analysis* \n
+- *A Novel Approach for Phase Identification in Smart Grids Using Graph Theory \n and Principal Component Analysis* \n
 Satya Jayadev P, Aravind Rajeswaran, Nirav P Bhatt, Ramkrishna Pasumarthy \n
 American Control Conference (ACC) 2016; [http://arxiv.org/abs/1511.06063 arxiv:1511.06063]
 
 === arXiv preprints
 
+- *Identifying Topology of Power Distribution Networks Based on Smart Meter Data* \n
+co-authored with Satya Jayadev, Nirav Bhatt, Ramkrishna Pasumarthy \n
+arXiv preprint: [https://arxiv.org/abs/1609.02678 arxiv:1609.02678]
 - *Network Topology Identification using PCA and its Graph Theoretic Interpretations* \n
 Aravind Rajeswaran, Shankar Narasimhan \n
 arXiv preprint: [https://arxiv.org/abs/1506.00438 arxiv:1506.00438v2]
@@ -25,7 +28,7 @@ Research Area: Computational Sustainability, Artificial Intelligence, Discrete O
 === Publication Venues
 
 I enjoy reading and following publications from the following venues: (\* = closest to my interests)
-- Machine Learning: NIPS\*, ICML\*, ICLR\*, AAAI
-- Optimization, Algorithms \& Theory: SIAM, SODA, COLT\*
+- Machine Learning: NIPS\*, ICML\*, ICLR\*
+- Optimization: SIAM, SODA
 - Signals \& Systems: IEEE (TAC, TSP, TIT), CDC\*, ACC
 - Robotics: ICRA
