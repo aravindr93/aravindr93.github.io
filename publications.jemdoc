@@ -9,12 +9,12 @@ International Conference on Learning Representations (ICLR) 2017; [https://arxiv
 - *A Novel Approach for Phase Identification in Smart Grids Using Graph Theory \n and Principal Component Analysis* \n
 Satya Jayadev P, Aravind Rajeswaran, Nirav P Bhatt, Ramkrishna Pasumarthy \n
 American Control Conference (ACC) 2016; [http://arxiv.org/abs/1511.06063 arxiv:1511.06063]
+- *Identifying Topology of Power Distribution Networks Based on Smart Meter Data* \n
+co-authored with Satya Jayadev, Nirav Bhatt, Ramkrishna Pasumarthy \n
+IEEE Transactions on Smart Grid 2017; [https://arxiv.org/abs/1609.02678 arxiv:1609.02678]
 
 === arXiv preprints
 
-- *Identifying Topology of Power Distribution Networks Based on Smart Meter Data* \n
-co-authored with Satya Jayadev, Nirav Bhatt, Ramkrishna Pasumarthy \n
-arXiv preprint: [https://arxiv.org/abs/1609.02678 arxiv:1609.02678]
 - *Network Topology Identification using PCA and its Graph Theoretic Interpretations* \n
 Aravind Rajeswaran, Shankar Narasimhan \n
 arXiv preprint: [https://arxiv.org/abs/1506.00438 arxiv:1506.00438v2]
@@ -22,16 +22,16 @@ arXiv preprint: [https://arxiv.org/abs/1506.00438 arxiv:1506.00438v2]
 Aravind Rajeswaran, Sridharakumar Narasimhan, Shankar Narasimhan \n
 arXiv preprint: [https://arxiv.org/abs/1606.01754 arxiv:1606.01754]
 
-=== Working papers
-
-- *HSGS: Hierarchical Graph Segmentation for Graph Search and Anomaly Detection* \n
-Aravind Rajeswaran, Kousik Krishnan, Balaraman Ravindran \n
-Research Area: Computational Sustainability, Artificial Intelligence, Discrete Optimization
+#=== Working papers
+#
+#- *HSGS: Hierarchical Graph Segmentation for Graph Search and Anomaly Detection* \n
+#Aravind Rajeswaran, Kousik Krishnan, Balaraman Ravindran \n
+#Research Area: Computational Sustainability, Artificial Intelligence, Discrete Optimization
 
 === Publication Venues
 
 I enjoy reading and following publications from the following venues: (\* = closest to my interests)
 - Machine Learning: NIPS\*, ICML\*, ICLR\*
 - Optimization: SIAM, SODA
-- Signals \& Systems: IEEE (TAC, TSP, TIT), CDC\*, ACC
-- Robotics: ICRA
+- Robotics: RSS\*, ICRA
+- Signals \& Systems: CDC\*, ACC
