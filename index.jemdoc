@@ -15,9 +15,6 @@ Email: aravraj@cs.washington.edu \n
 
 == Short Bio
 
-I am a PhD student at UW working on machine learning, optimization, and deep RL with [https://homes.cs.washington.edu/~sham/ Sham Kakade,] [http://homes.cs.washington.edu/~todorov/ Emo Todorov,] and [https://people.eecs.berkeley.edu/~svlevine/ Sergey Levine.] I'm also interested in aspects of computer vision, and learning predictive models of dynamical systems -- also called intuitive physics and system ID. Previously, I was a student at IIT Madras with [http://www.cse.iitm.ac.in/~ravi/ Balaraman Ravindran,] and received the best undergraduate thesis award. Before switching focus to AI, I worked in statistical physics of complex networks with [http://www.imsc.res.in/~sitabhra/ Sitabhra Sinha.]
+I am a PhD student at UW working on machine learning with [https://homes.cs.washington.edu/~sham/ Sham Kakade] and [http://homes.cs.washington.edu/~todorov/ Emo Todorov.] I also collaborate with [https://people.eecs.berkeley.edu/~svlevine/ Sergey Levine] and his students. For the summer of 2017, I interned at OpenAI with John Schulman and Igor Mordatch. We worked on improving policy gradient methods and applications in dexterous hand manipulation and multi-agent systems.
 
-My research interests are broad and include many areas of applied math like: optimization, (deep/machine) learning, optimal control, statistical physics, and dynamical systems. Current research directions are:
-- Policy optimization using natural gradients and Newton-CG
-- Reconciling policy search with trajectory optimization (specifically, iLQG and DDP)
-- Learning intuitive models of physics from video data
+Previously, I was a student at IIT Madras with [http://www.cse.iitm.ac.in/~ravi/ Balaraman Ravindran,] and received the best undergraduate thesis award. Before switching focus to AI, I worked on statistical physics of complex networks and general optimization questions.

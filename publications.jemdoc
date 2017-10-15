@@ -2,7 +2,9 @@
 = Publications
 
 === Accepted
-
+- *Towards Generalization and Simplicity in Continuous Control* \n
+Aravind Rajeswaran, Kendall Lowrey, Emanuel Todorov, Sham Kakade \n
+Neural Information Processing Systems (NIPS) 2017; [https://arxiv.org/abs/1703.02660 arxiv:1703.02660]
 - *EPOpt: Learning Robust Neural Network Policies Using Model Ensembles* \n
 Aravind Rajeswaran, Sarvjeet Ghotra, Balaraman Ravindran, Sergey Levine  \n
 International Conference on Learning Representations (ICLR) 2017; [https://arxiv.org/abs/1610.01283 arxiv:1610.01283]
@@ -12,29 +14,21 @@ American Control Conference (ACC) 2016; [http://arxiv.org/abs/1511.06063 arxiv:1
 - *Identifying Topology of Power Distribution Networks Based on Smart Meter Data* \n
 co-authored with Satya Jayadev, Nirav Bhatt, Ramkrishna Pasumarthy \n
 IEEE Transactions on Smart Grid 2017; [https://arxiv.org/abs/1609.02678 arxiv:1609.02678]
+- *A Graph Partitioning Approach for Leak Detection in Water Distribution Networks* \n
+Aravind Rajeswaran, Sridharakumar Narasimhan, Shankar Narasimhan \n
+Computers & Chemical Engineering (C&ChE) 2017; [https://arxiv.org/abs/1606.01754 arxiv:1606.01754]
 
 === arXiv preprints
-
-- *Towards Generalization and Simplicity in Continuous Control* \n
-Aravind Rajeswaran, Kendall Lowrey, Emanuel Todorov, Sham Kakade \n
-arXiv preprint: [https://arxiv.org/abs/1703.02660 arxiv:1703.02660]
+- *Learning Complex Dexterous Manipulation with Deep Reinforcement \n
+Learning and Demonstrations* \n
+Aravind Rajeswaran, Vikash Kumar, Abhishek Gupta, John Schulman, \n
+Emanuel Todorov, Sergey Levine \n
+arXiv preprint: [https://arxiv.org/abs/1709.10087 arxiv:1709.10087]
 - *Network Topology Identification using PCA and its Graph Theoretic Interpretations* \n
 Aravind Rajeswaran, Shankar Narasimhan \n
 arXiv preprint: [https://arxiv.org/abs/1506.00438 arxiv:1506.00438v2]
-- *A Graph Partitioning Approach for Leak Detection in Water Distribution Networks* \n
-Aravind Rajeswaran, Sridharakumar Narasimhan, Shankar Narasimhan \n
-arXiv preprint: [https://arxiv.org/abs/1606.01754 arxiv:1606.01754]
-
-#=== Working papers
-#
-#- *HSGS: Hierarchical Graph Segmentation for Graph Search and Anomaly Detection* \n
-#Aravind Rajeswaran, Kousik Krishnan, Balaraman Ravindran \n
-#Research Area: Computational Sustainability, Artificial Intelligence, Discrete Optimization
 
 === Publication Venues
-
-I enjoy reading and following publications from the following venues: (\* = closest to my interests)
-- Machine Learning: NIPS\*, ICML\*, ICLR\*
-- Optimization: SIAM, SODA
-- Robotics: RSS\*, ICRA
-- Signals \& Systems: CDC\*, ACC
+- Machine Learning: NIPS, ICML, ICLR
+- Robotics: RSS, ICRA, CoRL
+- Signals \& Systems: CDC, ACC
