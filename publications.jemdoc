@@ -27,15 +27,15 @@ arXiv preprint: [https://arxiv.org/abs/1709.10087 arxiv:1709.10087]
 - *Divide-and-Conquer Reinforcement Learning* \n
 Dibya Ghosh, Avi Singh, Aravind Rajeswaran, Vikash Kumar, Sergey Levine \n
 arXiv preprint: [https://arxiv.org/abs/1711.09874 arXiv:1711.09874]
-- *Variance Reduction for Policy Gradient with Action-Dependent Factorized Baselines* \n
-Cathy Wu, Aravind Rajeswaran, Yan Duan, Vikash Kumar, Alexandre Bayen, \n
-Sham Kakade, Igor Mordatch, Pieter Abbeel \n
-Contributed talk at NIPS 2017 DeepRL symposium. Under review at ICLR 2018.
 - *Network Topology Identification using PCA and its Graph Theoretic Interpretations* \n
 Aravind Rajeswaran, Shankar Narasimhan \n
 arXiv preprint: [https://arxiv.org/abs/1506.00438 arxiv:1506.00438v2]
+#- *Variance Reduction for Policy Gradient with Action-Dependent Factorized Baselines* \n
+#Cathy Wu, Aravind Rajeswaran, Yan Duan, Vikash Kumar, Alexandre Bayen, \n
+#Sham Kakade, Igor Mordatch, Pieter Abbeel \n
+#Contributed talk at NIPS 2017 DeepRL symposium. Under review at ICLR 2018.
 
-=== Publication Venues
-- Machine Learning: NIPS, ICML, ICLR
-- Robotics: RSS, ICRA, CoRL
-- Signals \& Systems: CDC, ACC
+#=== Publication Venues
+#- Machine Learning: NIPS, ICML, ICLR
+#- Robotics: RSS, ICRA, CoRL
+#- Signals \& Systems: CDC, ACC
