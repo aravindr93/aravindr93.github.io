@@ -1,39 +1,52 @@
 # jemdoc: menu{MENU}{publications.html}, notime, analytics{UA-79424948-1}
 = Publications
 
-=== Accepted
-- *Towards Generalization and Simplicity in Continuous Control* \n
-Aravind Rajeswaran, Kendall Lowrey, Emanuel Todorov, Sham Kakade \n
-Neural Information Processing Systems (NIPS) 2017; [https://arxiv.org/abs/1703.02660 arxiv:1703.02660]
-- *EPOpt: Learning Robust Neural Network Policies Using Model Ensembles* \n
-Aravind Rajeswaran, Sarvjeet Ghotra, Balaraman Ravindran, Sergey Levine  \n
-International Conference on Learning Representations (ICLR) 2017; [https://arxiv.org/abs/1610.01283 arxiv:1610.01283]
-- *A Novel Approach for Phase Identification in Smart Grids Using Graph Theory \n and Principal Component Analysis* \n
-Satya Jayadev P, Aravind Rajeswaran, Nirav P Bhatt, Ramkrishna Pasumarthy \n
-American Control Conference (ACC) 2016; [http://arxiv.org/abs/1511.06063 arxiv:1511.06063]
-- *Identifying Topology of Power Distribution Networks Based on Smart Meter Data* \n
-co-authored with Satya Jayadev, Nirav Bhatt, Ramkrishna Pasumarthy \n
-IEEE Transactions on Smart Grid 2017; [https://arxiv.org/abs/1609.02678 arxiv:1609.02678]
-- *A Graph Partitioning Approach for Leak Detection in Water Distribution Networks* \n
-Aravind Rajeswaran, Sridharakumar Narasimhan, Shankar Narasimhan \n
-Computers & Chemical Engineering (C&ChE) 2017; [https://arxiv.org/abs/1606.01754 arxiv:1606.01754]
-
-=== Preprints
+=== Selected preprints
 - *Learning Complex Dexterous Manipulation with Deep Reinforcement \n
 Learning and Demonstrations* \n
-Aravind Rajeswaran, Vikash Kumar, Abhishek Gupta, John Schulman, \n
+_Aravind Rajeswaran_, Vikash Kumar, Abhishek Gupta, John Schulman, \n
 Emanuel Todorov, Sergey Levine \n
 arXiv preprint: [https://arxiv.org/abs/1709.10087 arxiv:1709.10087]
+
+=== Conferences and Journals
+- *Variance Reduction for Policy Gradient Using Action-Dependent Factorized Baselines* \n
+Cathy Wu, _Aravind Rajeswaran_, Yan Duan, Vikash Kumar, Alexandre M Bayen, \n
+Sham Kakade, Igor Mordatch, Pieter Abbeel \n
+International Conference on Learning Representations (_ICLR_) 2018. *Oral*
 - *Divide-and-Conquer Reinforcement Learning* \n
-Dibya Ghosh, Avi Singh, Aravind Rajeswaran, Vikash Kumar, Sergey Levine \n
-arXiv preprint: [https://arxiv.org/abs/1711.09874 arXiv:1711.09874]
-- *Network Topology Identification using PCA and its Graph Theoretic Interpretations* \n
-Aravind Rajeswaran, Shankar Narasimhan \n
-arXiv preprint: [https://arxiv.org/abs/1506.00438 arxiv:1506.00438v2]
-#- *Variance Reduction for Policy Gradient with Action-Dependent Factorized Baselines* \n
-#Cathy Wu, Aravind Rajeswaran, Yan Duan, Vikash Kumar, Alexandre Bayen, \n
-#Sham Kakade, Igor Mordatch, Pieter Abbeel \n
-#Contributed talk at NIPS 2017 DeepRL symposium. Under review at ICLR 2018.
+Dibya Ghosh, Avi Singh, _Aravind Rajeswaran_, Vikash Kumar, Sergey Levine \n
+International Conference on Learning Representations (_ICLR_) 2018; [https://arxiv.org/abs/1711.09874 arXiv:1711.09874]
+- *Towards Generalization and Simplicity in Continuous Control* \n
+_Aravind Rajeswaran_, Kendall Lowrey, Emanuel Todorov, Sham Kakade \n
+Neural Information Processing Systems (_NIPS_) 2017; [https://arxiv.org/abs/1703.02660 arxiv:1703.02660]
+- *EPOpt: Learning Robust Neural Network Policies Using Model Ensembles* \n
+_Aravind Rajeswaran_, Sarvjeet Ghotra, Balaraman Ravindran, Sergey Levine  \n
+International Conference on Learning Representations (_ICLR_) 2017; [https://arxiv.org/abs/1610.01283 arxiv:1610.01283]
+- *Reinforcement learning for non-prehensile manipulation: Transfer \n
+from simulation to physical system* \n
+Kendall Lowrey, Svetsolav Kolev, Jeremy Dao, _Aravind Rajeswaran_, Emanuel Todorov \n
+Simulation, Modeling, and Programming for Autonomous Robots (SIMPAR) 2018.
+- *A Novel Approach for Phase Identification in Smart Grids Using Graph Theory \n and Principal Component Analysis* \n
+Satya Jayadev P, _Aravind Rajeswaran_, Nirav P Bhatt, Ramkrishna Pasumarthy \n
+American Control Conference (ACC) 2016; [http://arxiv.org/abs/1511.06063 arxiv:1511.06063]
+- *Identifying Topology of Power Distribution Networks Based on Smart Meter Data* \n
+Jayadev P Satya, Nirav Bhatt, Ramkrishna Pasumarthy, _Aravind Rajeswaran_ \n
+IEEE Transactions on Smart Grid 2017; [https://arxiv.org/abs/1609.02678 arxiv:1609.02678]
+- *A Graph Partitioning Approach for Leak Detection in Water Distribution Networks* \n
+_Aravind Rajeswaran_, Sridharakumar Narasimhan, Shankar Narasimhan \n
+Computers & Chemical Engineering (C&ChE) 2017; [https://arxiv.org/abs/1606.01754 arxiv:1606.01754]
+
+=== Selected workshop papers
+- *A Linear Time Algorithm to Compute the Natural Policy Gradient* \n
+_Aravind Rajeswaran_, Rahul Kidambi, Sham Kakade \n
+[https://sites.google.com/view/deeprl-symposium-nips2017/ DeepRL Symposium] (NIPS) 2017.
+- *Hand Manipulation Suite: A Benchmark for Dexterous Manipulation* \n
+Vikash Kumar, _Aravind Rajeswaran_, Abhishek Gupta, Emanuel Todorov, Sergey Levine \n
+[https://sites.google.com/site/rss17learningtoplan/ Learning from Demonstrations Workshop] (RSS) 2017.
+
+#- *Network Topology Identification using PCA and its Graph Theoretic Interpretations* \n
+#_Aravind Rajeswaran_, Shankar Narasimhan \n
+#arXiv preprint: [https://arxiv.org/abs/1506.00438 arxiv:1506.00438v2]
 
 #=== Publication Venues
 #- Machine Learning: NIPS, ICML, ICLR
