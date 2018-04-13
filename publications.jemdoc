@@ -1,14 +1,12 @@
 # jemdoc: menu{MENU}{publications.html}, notime, analytics{UA-79424948-1}
 = Publications
 
-=== Selected preprints
+=== Conferences and Journals
 - *Learning Complex Dexterous Manipulation with Deep Reinforcement \n
 Learning and Demonstrations* \n
 Aravind Rajeswaran, Vikash Kumar, Abhishek Gupta, John Schulman, \n
 Emanuel Todorov, Sergey Levine \n
-arXiv preprint: [https://arxiv.org/abs/1709.10087 arxiv:1709.10087]
-
-=== Conferences and Journals
+Robotics: Science and Systems (_RSS_) 2018; [https://arxiv.org/abs/1709.10087 arxiv:1709.10087]
 - *Variance Reduction for Policy Gradient Using Action-Dependent Factorized Baselines* \n
 Cathy Wu, Aravind Rajeswaran, Yan Duan, Vikash Kumar, Alexandre M Bayen, \n
 Sham Kakade, Igor Mordatch, Pieter Abbeel \n
