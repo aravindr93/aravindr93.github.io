@@ -17,7 +17,7 @@
             --highlight-blue: #EAF2F8;
             --highlight-orange: #FEF5E7;
             --text-color: #333;
-            --max-width: 900px;
+            --max-width: 910px;
         }
 
         * {
@@ -86,7 +86,23 @@
 
         .position {
             font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .research-focus {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
             margin-bottom: 1rem;
+        }
+
+        .keyword {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            background-color: var(--highlight-blue);
+            color: #555;
+            border-radius: 4px;
+            font-size: 0.85rem;
         }
 
         .social-links {
@@ -177,23 +193,40 @@
         }
 
         .mentoring-column {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 1.5rem;
+            border: 1px solid #e9ecef;
         }
 
         .mentoring-column h3 {
-            font-size: 1.2rem;
-            margin-bottom: 0rem;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #999;
+            color: var(--text-color);
         }
 
         .mentoring-column ul {
             list-style-type: none;
-            padding-left: 1rem;
+            padding-left: 0;
         }
 
         .mentoring-column li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.6rem;
+            padding: 0.4rem 0.6rem;
+            border-radius: 6px;
+            transition: background-color 0.2s ease;
+            font-size: 0.95rem;
+        }
+
+        .mentoring-column li:hover {
+            background-color: #e9ecef;
+        }
+
+        .mentoring-column li .role-arrow {
+            color: #888;
+            margin: 0 0.15rem;
         }
 
         .course {
@@ -350,10 +383,13 @@ html {
             <div class="profile-info">
                 <h1 class="name">Aravind Rajeswaran</h1>
                 <p class="position">Research Scientist at <a href="https://www.microsoft.com/en-us/research/lab/ai-frontiers/">Microsoft AI Frontiers</a></p>
-                <p class="position">
-                    Visiting PostDoc / Collaborator,<br>
-                    <a href="https://bair.berkeley.edu/">Berkeley AI Research Lab (BAIR)</a>
-                </p>
+                <div class="research-focus">
+                    <span class="keyword">Multimodal Learning</span>
+                    <span class="keyword">World Models</span>
+                    <span class="keyword">AI Agents</span>
+                    <span class="keyword">Reinforcement Learning</span>
+                    <span class="keyword">Robotics</span>
+                </div>
                 <nav class="social-links">
                     <a href="https://scholar.google.com/citations?user=_EJrRVAAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i>Google Scholar</a>
                     <a href="assets/bio.txt"><i class="fas fa-user"></i>Bio</a>
@@ -384,7 +420,7 @@ html {
                 <article class="paper">
                     <h4 class="paper-title">Fara-7B: An Efficient Agentic Model for Computer Use</h4>
                     <p class="paper-authors"><span class="author-highlight">CUA Team @ Microsoft AIF</span> (Role: Led model grounding; ~60% -> 89.3% on ScreenSpot)</p>
-                    <p>Preprint and Research Preview of Open-Weight Model | <a href="https://huggingface.co/microsoft/Fara-7B">Model Card</a> | <a href="https://www.microsoft.com/en-us/research/blog/fara-7b-an-efficient-agentic-model-for-computer-use/">Blog Post</a></p>
+                    <p>Preprint and Research Preview of Open-Weight Model | <a href="https://arxiv.org/abs/2511.19663">Paper</a> | <a href="https://huggingface.co/microsoft/Fara-7B">Model Card</a> | <a href="https://www.microsoft.com/en-us/research/blog/fara-7b-an-efficient-agentic-model-for-computer-use/">Blog Post</a></p>
                 </article>
 
                 <article class="paper">
@@ -467,33 +503,33 @@ html {
                 <div class="mentoring-column">
                     <h3>Interns</h3>
                     <ul>
-                        <li><a href="https://wuphilipp.github.io/">Philipp Wu</a> (PhD at Berkeley ==> startup)</li>
-                        <li><a href="https://arjunmajum.github.io/">Arjun Majumdar</a> (PhD at GATech ==> RS at Meta)</li>
-                        <li><a href="https://anuragajay.github.io/">Anurag Ajay</a> (PhD at MIT ==> RS at DeepMind)</li>
-                        <li><a href="https://mandizhao.github.io/">Mandi Zhao</a> (PhD at Stanford)</li>
-                        <li><a href="https://nicklashansen.github.io/">Nicklas Hansen</a> (PhD at UCSD)</li>
-                        <li><a href="https://www.cs.cmu.edu/~sbahl2/">Shikhar Bahl</a> (PhD at CMU ==> RS at Skild.AI)</li>
-                        <li><a href="https://bland.website/">Allan Zhou</a> (PhD at Stanford ==> RE at DeepMind)</li>
-                        <li><a href="https://cs.stanford.edu/~surajn/">Suraj Nair</a> (PhD at Stanford ==> RS at PI)</li>
-                        <li><a href="https://kelym.github.io/">Liyiming Ke</a> (PhD at UW Seattle ==> RS at PI)</li>
-                        <li><a href="https://andipeng.com/">Andi Peng</a> (PhD at MIT ==> RS at Anthropic)</li>
-                        <li><a href="https://yuchencui.cc/">Yuchen Cui</a> (PhD at UT Austin ==> Prof at UCLA)</li>
+                        <li><a href="https://wuphilipp.github.io/">Philipp Wu</a> (UC Berkeley, PhD <span class="role-arrow">&rarr;</span> startup)</li>
+                        <li><a href="https://arjunmajum.github.io/">Arjun Majumdar</a> (GATech, PhD <span class="role-arrow">&rarr;</span> Meta)</li>
+                        <li><a href="https://anuragajay.github.io/">Anurag Ajay</a> (MIT, PhD <span class="role-arrow">&rarr;</span> DeepMind)</li>
+                        <li><a href="https://mandizhao.github.io/">Mandi Zhao</a> (Stanford, PhD)</li>
+                        <li><a href="https://nicklashansen.github.io/">Nicklas Hansen</a> (UCSD, PhD)</li>
+                        <li><a href="https://www.cs.cmu.edu/~sbahl2/">Shikhar Bahl</a> (CMU, PhD <span class="role-arrow">&rarr;</span> Skild.AI)</li>
+                        <li><a href="https://bland.website/">Allan Zhou</a> (Stanford, PhD <span class="role-arrow">&rarr;</span> OpenAI)</li>
+                        <li><a href="https://cs.stanford.edu/~surajn/">Suraj Nair</a> (Stanford, PhD <span class="role-arrow">&rarr;</span> Physical Intelligence)</li>
+                        <li><a href="https://kelym.github.io/">Liyiming Ke</a> (UW, PhD <span class="role-arrow">&rarr;</span> Physical Intelligence)</li>
+                        <li><a href="https://andipeng.com/">Andi Peng</a> (MIT, PhD <span class="role-arrow">&rarr;</span> co-founder, humans&)</li>
+                        <li><a href="https://yuchencui.cc/">Yuchen Cui</a> (UT Austin, PhD <span class="role-arrow">&rarr;</span> Prof at UCLA)</li>
                     </ul>
                 </div>
 
                 <div class="mentoring-column">
                     <h3>University Students and AI Residents</h3>
                     <ul>
-                        <li><a href="https://www.linkedin.com/in/aryan-jain-9101/">Aryan Jain</a> (UC Berkeley, BS ==> RE at Tesla Optimus)</li>
-                        <li><a href="https://www.linkedin.com/in/sergio-arnaud-226456198/">Sergio Arnaud</a> (AI Resident, FAIR ==> RE at Meta)</li>
-                        <li><a href="https://rmrafailov.github.io/">Rafael Rafailov</a> (Stanford, MS ==> Stanford, PhD)</li>
-                        <li><a href="https://www.karmeshyadav.com/">Karmesh Yadav</a> (CMU MS ==> Georgia Tech, PhD)</li>
-                        <li><a href="https://kzl.github.io/">Kevin Lu</a> (UC Berkeley, BS ==> FAIR AI resident)</li>
-                        <li><a href="https://www.linkedin.com/in/bnevans/">Ben Evans</a> (UW, BS/MS ==> PhD at NYU)</li>
-                        <li><a href="https://www.linkedin.com/in/sarvjeet-singh-ghotra-1a145898/">Sarvjeet Ghotra</a> (IITM Intern ==> PhD at MILA)</li>
-                        <li><a href="https://colinxsummers.com/">Colin Summers</a> (UW, BS/MS ==> UW PhD)</li>
-                        <li><a href="https://www.linkedin.com/in/catherinecang/">Catherine Cang</a> (UC Berkeley, BS ==> SWE at Plaid)</li>
-                        <li><a href="https://www.linkedin.com/in/dpjain/">Divye P. Jain</a> (UW, BS/MS ==> Google MTV)</li>
+                        <li><a href="https://www.linkedin.com/in/aryan-jain-9101/">Aryan Jain</a> (UC Berkeley, BS <span class="role-arrow">&rarr;</span> Tesla Optimus)</li>
+                        <li><a href="https://www.linkedin.com/in/sergio-arnaud-226456198/">Sergio Arnaud</a> (AI Resident, FAIR <span class="role-arrow">&rarr;</span> Meta)</li>
+                        <li><a href="https://rmrafailov.github.io/">Rafael Rafailov</a> (Stanford, MS <span class="role-arrow">&rarr;</span> Reflection AI)</li>
+                        <li><a href="https://www.karmeshyadav.com/">Karmesh Yadav</a> (FAIR <span class="role-arrow">&rarr;</span> Georgia Tech, PhD)</li>
+                        <li><a href="https://kzl.github.io/">Kevin Lu</a> (UC Berkeley, BS <span class="role-arrow">&rarr;</span> Thinking Machines)</li>
+                        <li><a href="https://www.linkedin.com/in/bnevans/">Ben Evans</a> (UW, BS/MS <span class="role-arrow">&rarr;</span> NYU, PhD)</li>
+                        <li><a href="https://www.linkedin.com/in/sarvjeet-singh-ghotra-1a145898/">Sarvjeet Ghotra</a> (IITM Intern <span class="role-arrow">&rarr;</span> MILA, PhD)</li>
+                        <li><a href="https://colinxsummers.com/">Colin Summers</a> (UW, BS/MS <span class="role-arrow">&rarr;</span> UW, PhD)</li>
+                        <li><a href="https://www.linkedin.com/in/catherinecang/">Catherine Cang</a> (UC Berkeley, BS <span class="role-arrow">&rarr;</span> Reflection AI)</li>
+                        <li><a href="https://www.linkedin.com/in/dpjain/">Divye P. Jain</a> (UW, BS/MS <span class="role-arrow">&rarr;</span> Google)</li>
                     </ul>
                 </div>
             </div>
