@@ -1,559 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aravind Rajeswaran - Research Scientist at Microsoft AI Frontiers">
-    <title>Aravind Rajeswaran</title>
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- Styles -->
-    <style>
-        :root {
-            --primary-color: #1772d0;
-            --hover-color: #f09228;
-            --highlight-blue: #EAF2F8;
-            --highlight-orange: #FEF5E7;
-            --text-color: #333;
-            --max-width: 910px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aravind Rajeswaran - Research Scientist at Microsoft AI Frontiers. Building generalist AI agents through reinforcement learning, representation learning, and world models.">
+  <meta name="author" content="Aravind Rajeswaran">
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+  <!-- Open Graph -->
+  <meta property="og:title" content="Aravind Rajeswaran">
+  <meta property="og:description" content="Research Scientist at Microsoft AI Frontiers. Building generalist AI agents.">
+  <meta property="og:type" content="website">
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Helvetica', sans-serif;
-            font-size: 16px;
-            line-height: 1.6;
-            color: var(--text-color);
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        a {
-            color: var(--primary-color);
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-
-        a:hover, a:focus {
-            color: var(--hover-color);
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 20px;
-        }
-
-        .profile-section {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-            flex-wrap: wrap;
-            margin: 0 auto 2rem auto;
-            max-width: 90%;
-            padding-left: 5%;
-        }
-
-        .profile-image {
-            flex: 1;
-            min-width: 240px;
-            display: flex;
-            align-items: center;
-        }
-
-        .profile-info {
-            flex: 1.5;
-            min-width: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .name {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-
-        .position {
-            font-size: 1.1rem;
-            margin-bottom: 0.8rem;
-        }
-
-        .research-focus {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.4rem;
-            margin-bottom: 1rem;
-        }
-
-        .keyword {
-            display: inline-block;
-            padding: 0.2rem 0.6rem;
-            background-color: var(--highlight-blue);
-            color: #555;
-            border-radius: 4px;
-            font-size: 0.85rem;
-        }
-
-        .social-links {
-            display: grid;
-            grid-template-columns: repeat(3, auto);
-            gap: 1rem;
-            margin-top: 1rem;
-            width: fit-content;
-        }
-
-        .social-links a {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            white-space: nowrap;
-        }
-
-        .social-links i {
-            font-size: 1.1rem;
-            width: 1.2rem;
-            text-align: center;
-        }
-
-        .section {
-            margin: 1rem 0;
-            padding: 1.5rem;
-            border-radius: 8px;
-        }
-
-        .highlight-blue {
-            background-color: var(--highlight-blue);
-        }
-
-        .highlight-orange {
-            background-color: var(--highlight-orange);
-        }
-
-        .paper {
-            margin-bottom: 1.5rem;
-        }
-
-        .paper-title {
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-
-        .paper-authors {
-            margin-bottom: 0.5rem;
-        }
-
-        .author-highlight {
-            color: #a40000;
-        }
-
-        .section-title {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #ccc;
-        }
-
-        .section h3 {
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
-        }
-
-        hr {
-            border: none;
-            border-top: 2px solid #ccc;
-            margin: 1rem 0;
-        }
-
-        @media (max-width: 768px) {
-            .profile-section {
-                flex-direction: column;
-            }
-            
-            .profile-image, .profile-info {
-                width: 100%;
-            }
-        }
-
-        .mentoring-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .mentoring-column {
-            background-color: #f8f9fa;
-            border-radius: 10px;
-            padding: 1.5rem;
-            border: 1px solid #e9ecef;
-        }
-
-        .mentoring-column h3 {
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #999;
-            color: var(--text-color);
-        }
-
-        .mentoring-column ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .mentoring-column li {
-            margin-bottom: 0.6rem;
-            padding: 0.4rem 0.6rem;
-            border-radius: 6px;
-            transition: background-color 0.2s ease;
-            font-size: 0.95rem;
-        }
-
-        .mentoring-column li:hover {
-            background-color: #e9ecef;
-        }
-
-        .mentoring-column li .role-arrow {
-            color: #888;
-            margin: 0 0.15rem;
-        }
-
-        .course {
-            margin-bottom: 2rem;
-            padding: 1.5rem;
-            background-color: var(--highlight-blue);
-            border-radius: 8px;
-        }
-
-        .course h3 {
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .course p {
-            margin-bottom: 0;
-        }
-
-        .award {
-            color: #006400;
-            font-weight: 700;
-        }
-
-        .text-center {
-            text-align: center;
-        }
-
-        footer {
-            margin-top: 4rem;
-        }
-
-        @media (max-width: 768px) {
-            .mentoring-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .course {
-                padding: 1rem;
-            }
-        }
-
-        .about {
-            margin-bottom: 2rem;
-            text-align: justify;
-        }
-
-        .papers {
-            margin-bottom: 3rem;
-        }
-
-        .mentoring {
-            margin-bottom: 3rem;
-        }
-
-        .teaching {
-            margin-bottom: 3rem;
-        }
-
-        .about a {
-            white-space: nowrap;
-        }
-    </style>
-
-    <link href="./_files/css" rel="stylesheet" type="text/css">
-
-<!--
-<style id="dark-reader-style" type="text/css">@media screen {
-
-/* Leading rule */
-html {
-  -webkit-filter: brightness(110%) contrast(90%) grayscale(20%) sepia(10%) !important;
-}
-
-/* Text contrast */
-html {
-  text-shadow: 0 0 0 !important;
-}
-
-/* Full screen */
-*:-webkit-full-screen, *:-webkit-full-screen * {
-  -webkit-filter: none !important;
-}
-
-/* Page background */
-html {
-  background: rgb(255,255,255) !important;
-}
-
-}</style>
--->
-
-<script type="text/javascript">
-   function visibility_on(id) {
-        var e = document.getElementById(id+"_text");
-        if(e.style.display == 'none')
-            e.style.display = 'block';
-        var e = document.getElementById(id+"_img");
-        if(e.style.display == 'none')
-            e.style.display = 'block';
-   }
-   function visibility_off(id) {
-        var e = document.getElementById(id+"_text");
-        if(e.style.display == 'block')
-            e.style.display = 'none';
-        var e = document.getElementById(id+"_img");
-        if(e.style.display == 'block')
-            e.style.display = 'none';
-   }
-   function toggle_visibility(id) {
-       var e = document.getElementById(id+"_text");
-       if(e.style.display == 'inline')
-          e.style.display = 'block';
-       else
-          e.style.display = 'inline';
-       var e = document.getElementById(id+"_img");
-       if(e.style.display == 'inline')
-          e.style.display = 'block';
-       else
-          e.style.display = 'inline';
-   }
-   function toggle_vis(id) {
-       var e = document.getElementById(id);
-       if (e.style.display == 'none')
-           e.style.display = 'inline';
-       else
-           e.style.display = 'none';
-   }
-</script>
-
-<head>
   <title>Aravind Rajeswaran</title>
-  <base target="_blank">
-  <!-- <body bgcolor=#f2f2f2> -->
-  <!-- <body bgcolor=#F5F3EE> -->
-  <!-- <body bgcolor=#ffffff> -->
-  <style>
-  #Highlight1 {
-      background-color: #EAF2F8;
-    }
-  </style>
-  <style>
-  #Highlight2 {
-      background-color: #FEF5E7;
-    }
-  </style>
+
+  <!-- Preload critical assets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- Theme initialization (prevents flash) -->
+  <script>
+    (function() {
+      const theme = localStorage.getItem('theme-preference') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
 </head>
-
 <body>
-    <main>
-        <section class="profile-section">
-            <div class="profile-image">
-                <img src="assets/dp2023.jpeg" alt="Aravind Rajeswaran profile photo">
-            </div>
-            <div class="profile-info">
-                <h1 class="name">Aravind Rajeswaran</h1>
-                <p class="position">Research Scientist at <a href="https://www.microsoft.com/en-us/research/lab/ai-frontiers/">Microsoft AI Frontiers</a></p>
-                <div class="research-focus">
-                    <span class="keyword">Multimodal Learning</span>
-                    <span class="keyword">World Models</span>
-                    <span class="keyword">AI Agents</span>
-                    <span class="keyword">Reinforcement Learning</span>
-                    <span class="keyword">Robotics</span>
-                </div>
-                <nav class="social-links">
-                    <a href="https://scholar.google.com/citations?user=_EJrRVAAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i>Google Scholar</a>
-                    <a href="assets/bio.txt"><i class="fas fa-user"></i>Bio</a>
-                    <a href="assets/cv.pdf"><i class="fas fa-file-alt"></i>CV</a>
-                    <a href="https://github.com/aravindr93"><i class="fab fa-github"></i>GitHub</a>
-                    <a href="https://twitter.com/aravindr93"><i class="fab fa-twitter"></i>Twitter</a>
-                </nav>
-            </div>
-        </section>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">Aravind Rajeswaran</a>
+      <nav class="nav-links">
+        <a href="#papers">Research</a>
+        <a href="#mentoring">Mentoring</a>
+        <a href="#teaching">Teaching</a>
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
 
-        <hr>
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero fade-in">
+      <div class="hero-image">
+        <img src="assets/dp2023.jpeg" alt="Aravind Rajeswaran" width="280" height="280">
+      </div>
+      <div class="hero-content">
+        <h1>Aravind Rajeswaran</h1>
+        <p class="hero-title">Research Scientist at <a href="https://www.microsoft.com/en-us/research/lab/ai-frontiers/" target="_blank" rel="noopener">Microsoft AI Frontiers</a></p>
 
-        <section class="about">
-            <p>
-                I'm interested in building generalist AI agents that can operate in the open world. Towards this goal, my research brings together elements of reinforcement learning, representation learning, and world models. Prior to my role at Microsoft, I spent 4 years at Meta (FAIR) working on Embodied AI with <a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a>, <a href="https://dhruvbatra.com/">Dhruv Batra</a>, and <a href="https://www.cs.cmu.edu/~abhinavg/">Abhinav Gupta</a>. In addition to my industry roles, I've also collaborated closely with the academic labs of Prof.&nbsp;<a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a> at UC Berkeley and Prof.&nbsp;<a href="https://www.cs.cmu.edu/~abhinavg/">Abhinav Gupta</a> at CMU.
+        <div class="research-tags">
+          <span class="tag">Agents</span>
+          <span class="tag">Reinforcement Learning</span>
+          <span class="tag">World Models</span>
+          <span class="tag">Multimodal Learning</span>
+          <span class="tag">Robotics</span>
+        </div>
 
-                I recieved my PhD in Computer Science from the University of Washington working with Profs.&nbsp;<a href="https://homes.cs.washington.edu/~sham/">Sham Kakade</a> and <a href="http://homes.cs.washington.edu/~todorov/">Emo Todorov.</a> During this time, I also worked closely with <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a> and <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a>, and spent time as a student researcher at <a href="https://research.google/teams/brain/">Google Brain</a> and <a href="https://openai.com/">OpenAI</a>. Before that, I recieved my bachelors and the best undergraduate thesis award from IIT Madras working with <a href="https://dsai.iitm.ac.in/~ravi/">Balaraman Ravindran</a>.
-            </p>
+        <div class="social-links">
+          <a href="https://scholar.google.com/citations?user=_EJrRVAAAAAJ&hl=en" class="social-link" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+            </svg>
+            Scholar
+          </a>
+          <a href="https://github.com/aravindr93" class="social-link" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            GitHub
+          </a>
+          <a href="https://twitter.com/aravindr93" class="social-link" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+            Twitter
+          </a>
+          <a href="assets/cv.pdf" class="social-link" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            CV
+          </a>
+        </div>
+      </div>
+    </section>
 
-        </section>
+    <!-- About Section -->
+    <section class="about fade-in">
+      <div class="about-content">
+        <p>
+          I'm interested in building AI agents that can perceive, think, and act like humans in the open world, both digital and physical! For this, I lean on RL, world models, and visual imitation. I'm now at <a href="https://www.microsoft.com/en-us/research/lab/ai-frontiers/" target="_blank" rel="noopener">Microsoft AI Frontiers</a> building on-device computer use agents like <a href="https://www.microsoft.com/en-us/research/blog/fara-7b-an-efficient-agentic-model-for-computer-use/" target="_blank" rel="noopener">Fara</a>. Prior to this, I spent 4 years at Meta (FAIR) working on Embodied AI agents with <a href="https://people.eecs.berkeley.edu/~malik/" target="_blank" rel="noopener">Jitendra Malik</a>, <a href="https://dhruvbatra.com/" target="_blank" rel="noopener">Dhruv Batra</a>, and <a href="https://www.cs.cmu.edu/~abhinavg/" target="_blank" rel="noopener">Abhinav Gupta</a>. I also collaborated closely with Prof.&nbsp;<a href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank" rel="noopener">Pieter Abbeel</a> at UC Berkeley as a visiting researcher.
+        </p>
+        <p>
+          I received my PhD in Computer Science from the University of Washington working with Profs.&nbsp;<a href="https://homes.cs.washington.edu/~sham/" target="_blank" rel="noopener">Sham Kakade</a> and <a href="http://homes.cs.washington.edu/~todorov/" target="_blank" rel="noopener">Emo Todorov</a>. I also worked closely with <a href="https://people.eecs.berkeley.edu/~svlevine/" target="_blank" rel="noopener">Sergey Levine</a> and <a href="https://ai.stanford.edu/~cbfinn/" target="_blank" rel="noopener">Chelsea Finn</a>, and spent time as a student researcher at <a href="https://research.google/teams/brain/" target="_blank" rel="noopener">Google Brain</a> and <a href="https://openai.com/" target="_blank" rel="noopener">OpenAI</a>. Before that, I received my bachelors and the best undergraduate thesis award from IIT Madras working with <a href="https://dsai.iitm.ac.in/~ravi/" target="_blank" rel="noopener">Balaraman Ravindran</a>.
+        </p>
+      </div>
+    </section>
 
-        <section class="papers">
-            <h2 class="section-title">Representative Projects</h2>
-            
-            <div class="section highlight-blue">
-                <h3>AI Agents - Perception & Action</h3>
+    <!-- Papers Section -->
+    <section id="papers" class="papers fade-in">
+      <h2 class="section-title">Selected Research</h2>
 
-                <article class="paper">
-                    <h4 class="paper-title">Fara-7B: An Efficient Agentic Model for Computer Use</h4>
-                    <p class="paper-authors"><span class="author-highlight">CUA Team @ Microsoft AIF</span> (Role: Led model grounding; ~60% -> 89.3% on ScreenSpot)</p>
-                    <p>Preprint and Research Preview of Open-Weight Model | <a href="https://arxiv.org/abs/2511.19663">Paper</a> | <a href="https://huggingface.co/microsoft/Fara-7B">Model Card</a> | <a href="https://www.microsoft.com/en-us/research/blog/fara-7b-an-efficient-agentic-model-for-computer-use/">Blog Post</a></p>
-                </article>
+      <article class="paper-card">
+        <div class="paper-image">
+          <img src="assets/papers/fara.png" alt="Fara-7B computer use agent">
+        </div>
+        <div class="paper-content">
+          <h4 class="paper-title">Fara-7B: An Efficient Agentic Model for Computer Use</h4>
+          <p class="paper-authors"><span class="highlight">CUA Team @ Microsoft AIF</span> (Role: Led Visual Grounding) </p>
+          <p class="paper-venue">Preprint 2024 | Open-Weight Model Release</p>
+          <div class="paper-links">
+            <a href="https://arxiv.org/abs/2511.19663" class="paper-link" target="_blank" rel="noopener">Paper</a>
+            <a href="https://huggingface.co/microsoft/Fara-7B" class="paper-link" target="_blank" rel="noopener">Model</a>
+            <a href="https://www.microsoft.com/en-us/research/blog/fara-7b-an-efficient-agentic-model-for-computer-use/" class="paper-link" target="_blank" rel="noopener">Blog</a>
+          </div>
+        </div>
+      </article>
 
-                <article class="paper">
-                    <h4 class="paper-title">OpenEQA: Embodied Question Answering in the Era of Foundation Models</h4>
-                    <p class="paper-authors"><span class="author-highlight">Cortex Team @ FAIR</span> (Role: PI and Project Lead)</p>
-                    <p>Computer Vision and Pattern Recognition (CVPR) 2024 | <a href="https://open-eqa.github.io/">Project Website</a></p>
-                </article>
+      <article class="paper-card">
+        <div class="paper-image">
+          <img src="assets/papers/openeqa.gif" alt="OpenEQA benchmark">
+        </div>
+        <div class="paper-content">
+          <h4 class="paper-title">OpenEQA: Embodied Question Answering in the Era of <br> Foundation Models</h4>
+          <p class="paper-authors"><span class="highlight">Cortex Team @ FAIR</span> (PI and Project Lead)</p>
+          <p class="paper-venue">CVPR 2024</p>
+          <div class="paper-links">
+            <a href="https://open-eqa.github.io/" class="paper-link" target="_blank" rel="noopener">Project</a>
+          </div>
+        </div>
+      </article>
 
-                <article class="paper">
-                    <h4 class="paper-title">Locate 3D: Real-World Object Localization via Self-Supervised Learning in 3D</h4>
-                    <p class="paper-authors"><span class="author-highlight">Cortex Team @ FAIR</span> (Role: PI and Tech Lead)</p>
-                    <p>International Conference on Machine Learning (ICML) 2025 | <a href="https://locate3d.atmeta.com/">Project Website</a></p>
-                </article>
+      <article class="paper-card">
+        <div class="paper-image">
+          <img src="assets/papers/vc1.png" alt="VC-1 visual cortex for embodied AI">
+        </div>
+        <div class="paper-content">
+          <h4 class="paper-title">VC-1: Where Are We in the Search for an Artificial Visual <br> Cortex for Embodied Intelligence?</h4>
+          <p class="paper-authors"><span class="highlight">Cortex Team @ FAIR</span> (PI and Tech Lead)</p>
+          <p class="paper-venue">NeurIPS 2023</p>
+          <div class="paper-links">
+            <a href="https://eai-vc.github.io/" class="paper-link" target="_blank" rel="noopener">Project</a>
+          </div>
+        </div>
+      </article>
 
-                <article class="paper">
-                    <h4 class="paper-title">VC-1: Where are we in the search for an Artificial Visual Cortex for Embodied Intelligence?</h4>
-                    <p class="paper-authors"><span class="author-highlight">Cortex Team @ FAIR</span> (Role: PI and Tech Lead)</p>
-                    <p>Neural Information Processing Systems (NeurIPS) 2023 | <a href="https://eai-vc.github.io/">Project Website</a></p>
-                </article>
+      <article class="paper-card">
+        <div class="paper-image">
+          <img src="assets/papers/decision-transformer.png" alt="Decision Transformer">
+        </div>
+        <div class="paper-content">
+          <h4 class="paper-title">Decision Transformer: Reinforcement Learning via <br> Sequence Modeling</h4>
+          <p class="paper-authors">Lili Chen*, Kevin Lu*, <span class="highlight">Aravind Rajeswaran</span>, et al.</p>
+          <p class="paper-venue">NeurIPS 2021</p>
+          <div class="paper-links">
+            <a href="https://sites.google.com/berkeley.edu/decision-transformer" class="paper-link" target="_blank" rel="noopener">Project</a>
+          </div>
+        </div>
+      </article>
 
-<!--                 <article class="paper">
-                    <h4 class="paper-title">R3M: A Universal Visual Representation for Robot Manipulation</h4>
-                    <p class="paper-authors">Suraj Nair, <span class="author-highlight">Aravind Rajeswaran</span>, Vikash Kumar, Chelsea Finn, Abhinav Gupta</p>
-                    <p>Scaling Robot Learning Workshop at ICRA 2022 | <strong class="award">Best Paper Award</strong> | <a href="https://sites.google.com/view/robot-r3m/">Project Website</a></p>
-                </article> -->
+      <article class="paper-card">
+        <div class="paper-image">
+          <img src="assets/papers/dapg.png" alt="Dexterous manipulation with deep RL">
+        </div>
+        <div class="paper-content">
+          <h4 class="paper-title">Learning Complex Dexterous Manipulation with Deep RL <br> and Demonstrations</h4>
+          <p class="paper-authors"><span class="highlight">Aravind Rajeswaran</span>, Vikash Kumar, Abhishek Gupta, et al.</p>
+          <p class="paper-venue">RSS 2018</p>
+          <div class="paper-links">
+            <a href="https://sites.google.com/view/deeprl-dexterous-manipulation" class="paper-link" target="_blank" rel="noopener">Project</a>
+          </div>
+        </div>
+      </article>
 
-            </div>
+      <a href="https://scholar.google.com/citations?user=_EJrRVAAAAAJ&hl=en" class="see-all-link" target="_blank" rel="noopener">
+        See all publications on Google Scholar
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+    </section>
 
-            <div class="section highlight-orange">
-                <h3>Reinforcement Learning</h3>
+    <!-- Mentoring Section -->
+    <section id="mentoring" class="mentoring fade-in">
+      <h2 class="section-title">Mentoring</h2>
+      <p class="mentoring-intro">
+        I enjoy collaborating with a diverse set of students and researchers. I have had the pleasure of mentoring some highly motivated students at both the undergraduate and PhD levels.
+      </p>
 
-                <article class="paper">
-                    <h4 class="paper-title">Decision Transformer: Reinforcement Learning via Sequence Modeling</h4>
-                    <p class="paper-authors">Lili Chen*, Kevin Lu*, <span class="author-highlight">Aravind Rajeswaran</span>, Kimin Lee, Aditya Grover, Michael Laskin, Pieter Abbeel, Aravind Srinivas, Igor Mordatch</p>
-                    <p>Neural Information Processing Systems (NeurIPS) 2021 | <a href="https://sites.google.com/berkeley.edu/decision-transformer">Project Website</a></p>
-                </article>
+      <div class="mentoring-grid">
+        <div class="mentoring-column">
+          <h3>PhD Interns</h3>
+          <ul class="mentoring-list">
+            <li><a href="https://wuphilipp.github.io/" target="_blank" rel="noopener">Philipp Wu</a> (UC Berkeley, PhD <span class="role-arrow">&rarr;</span> startup)</li>
+            <li><a href="https://arjunmajum.github.io/" target="_blank" rel="noopener">Arjun Majumdar</a> (GATech, PhD <span class="role-arrow">&rarr;</span> Meta)</li>
+            <li><a href="https://anuragajay.github.io/" target="_blank" rel="noopener">Anurag Ajay</a> (MIT, PhD <span class="role-arrow">&rarr;</span> DeepMind)</li>
+            <li><a href="https://mandizhao.github.io/" target="_blank" rel="noopener">Mandi Zhao</a> (Stanford, PhD)</li>
+            <li><a href="https://nicklashansen.github.io/" target="_blank" rel="noopener">Nicklas Hansen</a> (UCSD, PhD)</li>
+            <li><a href="https://www.cs.cmu.edu/~sbahl2/" target="_blank" rel="noopener">Shikhar Bahl</a> (CMU, PhD <span class="role-arrow">&rarr;</span> Skild.AI)</li>
+            <li><a href="https://bland.website/" target="_blank" rel="noopener">Allan Zhou</a> (Stanford, PhD <span class="role-arrow">&rarr;</span> OpenAI)</li>
+            <li><a href="https://cs.stanford.edu/~surajn/" target="_blank" rel="noopener">Suraj Nair</a> (Stanford, PhD <span class="role-arrow">&rarr;</span> Physical Intelligence)</li>
+            <li><a href="https://kelym.github.io/" target="_blank" rel="noopener">Liyiming Ke</a> (UW, PhD <span class="role-arrow">&rarr;</span> Physical Intelligence)</li>
+            <li><a href="https://andipeng.com/" target="_blank" rel="noopener">Andi Peng</a> (MIT, PhD <span class="role-arrow">&rarr;</span> co-founder, humans&)</li>
+            <li><a href="https://yuchencui.cc/" target="_blank" rel="noopener">Yuchen Cui</a> (UT Austin, PhD <span class="role-arrow">&rarr;</span> Prof at UCLA)</li>
+          </ul>
+        </div>
 
-                <article class="paper">
-                    <h4 class="paper-title">Learning Complex Dexterous Manipulation with Deep Reinforcement Learning and Demonstrations</h4>
-                    <p class="paper-authors"><span class="author-highlight">Aravind Rajeswaran</span>, Vikash Kumar, Abhishek Gupta, John Schulman, Emanuel Todorov, Sergey Levine</p>
-                    <p>Robotics: Science and Systems (RSS) 2018 | <a href="https://sites.google.com/view/deeprl-dexterous-manipulation">Project Website</a></p>
-                </article>
+        <div class="mentoring-column">
+          <h3>University Students & AI Residents</h3>
+          <ul class="mentoring-list">
+            <li><a href="https://www.linkedin.com/in/aryan-jain-9101/" target="_blank" rel="noopener">Aryan Jain</a> (UC Berkeley, BS <span class="role-arrow">&rarr;</span> Tesla Optimus)</li>
+            <li><a href="https://www.linkedin.com/in/sergio-arnaud-226456198/" target="_blank" rel="noopener">Sergio Arnaud</a> (AI Resident, FAIR <span class="role-arrow">&rarr;</span> Meta)</li>
+            <li><a href="https://rmrafailov.github.io/" target="_blank" rel="noopener">Rafael Rafailov</a> (Stanford, MS <span class="role-arrow">&rarr;</span> Reflection AI)</li>
+            <li><a href="https://www.karmeshyadav.com/" target="_blank" rel="noopener">Karmesh Yadav</a> (FAIR <span class="role-arrow">&rarr;</span> Georgia Tech, PhD)</li>
+            <li><a href="https://kzl.github.io/" target="_blank" rel="noopener">Kevin Lu</a> (UC Berkeley, BS <span class="role-arrow">&rarr;</span> Thinking Machines)</li>
+            <li><a href="https://www.linkedin.com/in/bnevans/" target="_blank" rel="noopener">Ben Evans</a> (UW, BS/MS <span class="role-arrow">&rarr;</span> NYU, PhD)</li>
+            <li><a href="https://www.linkedin.com/in/sarvjeet-singh-ghotra-1a145898/" target="_blank" rel="noopener">Sarvjeet Ghotra</a> (IITM Intern <span class="role-arrow">&rarr;</span> MILA, PhD)</li>
+            <li><a href="https://colinxsummers.com/" target="_blank" rel="noopener">Colin Summers</a> (UW, BS/MS <span class="role-arrow">&rarr;</span> UW, PhD)</li>
+            <li><a href="https://www.linkedin.com/in/catherinecang/" target="_blank" rel="noopener">Catherine Cang</a> (UC Berkeley, BS <span class="role-arrow">&rarr;</span> Reflection AI)</li>
+            <li><a href="https://www.linkedin.com/in/dpjain/" target="_blank" rel="noopener">Divye P. Jain</a> (UW, BS/MS <span class="role-arrow">&rarr;</span> Google)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-                <article class="paper">
-                    <h4 class="paper-title">Masked Trajectory Models for Prediction, Representation, and Control</h4>
-                    <p class="paper-authors">Philipp Wu, Arjun Majumdar, Kevin Stone, Yixin Lin, Igor Mordatch, Pieter Abbeel, <span class="author-highlight">Aravind Rajeswaran</span></p>
-                    <p>International Conference on Machine Learning (ICML) 2023 | <a href="https://wuphilipp.github.io/mtm/">Project Website</a></p>
-                </article>
+    <!-- Teaching Section -->
+    <section id="teaching" class="teaching fade-in">
+      <h2 class="section-title">Teaching</h2>
 
-                <article class="paper">
-                    <h4 class="paper-title">MOReL: Model-Based Offline Reinforcement Learning</h4>
-                    <p class="paper-authors">Rahul Kidambi, <span class="author-highlight">Aravind Rajeswaran</span>, Praneeth Netrapalli, Thorsten Joachims</p>
-                    <p>eural Information Processing Systems (NeurIPS) 2020 | <a href="https://arxiv.org/abs/2005.05951">Project Website</a></p>
-                </article>
+      <article class="course-card">
+        <h3>
+          <a href="http://deeprl.cs.washington.edu/" target="_blank" rel="noopener">CSE599G: Deep Reinforcement Learning</a>
+          <span class="course-role">Instructor</span>
+        </h3>
+        <p class="course-description">
+          I designed and co-taught a course on deep reinforcement learning at UW in Spring 2018. The course presents a rigorous mathematical treatment of various RL algorithms along with illustrative applications in robotics. Deep RL courses at UW, MIT, and CMU have borrowed and built upon the material I developed for this course.
+        </p>
+      </article>
 
-            </div>
+      <article class="course-card">
+        <h3>
+          <a href="https://courses.cs.washington.edu/courses/cse547/17sp/index.html" target="_blank" rel="noopener">CSE547: Machine Learning for Big Data</a>
+          <span class="course-role">Teaching Assistant</span>
+        </h3>
+        <p class="course-description">
+          This is an advanced graduate level course on machine learning with emphasis on machine learning at scale and distributed algorithms. Topics covered include hashing, sketching, streaming, large-scale distributed optimization, federated learning, and contextual bandits. I was the lead TA for this class.
+        </p>
+      </article>
+    </section>
+  </main>
 
-            <!-- <div class="section highlight-blue">
-                <h3>Tools for Robotics</h3>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="mailto:aravind.rajeswaran@microsoft.com">Email</a>
+          <a href="https://scholar.google.com/citations?user=_EJrRVAAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://github.com/aravindr93" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://twitter.com/aravindr93" target="_blank" rel="noopener">Twitter</a>
+        </div>
+        <p>&copy; 2025 Aravind Rajeswaran</p>
+      </div>
+    </div>
+  </footer>
 
-                <article class="paper">
-                    <h4 class="paper-title">RoboHive: A Unified Framework for Robot Learning</h4>
-                    <p class="paper-authors">Vikash Kumar, Rutav Shah, Gaoyue Zhou, Vincent Moens, Vittorio Caggiano, Jay Vakil, Abhishek Gupta, <span class="author-highlight">Aravind Rajeswaran</span></p>
-                    <p>Neural Information Processing Systems (NeurIPS) 2023 | <a href="https://sites.google.com/view/robohive">Project Website</a></p>
-                </article>
-
-                <article class="paper">
-                    <h4 class="paper-title">Learning Complex Dexterous Manipulation with Deep Reinforcement Learning and Demonstrations</h4>
-                    <p class="paper-authors"><span class="author-highlight">Aravind Rajeswaran</span>, Vikash Kumar, Abhishek Gupta, John Schulman, Emanuel Todorov, Sergey Levine</p>
-                    <p>Robotics: Science and Systems (RSS) 2018 | <a href="https://sites.google.com/view/deeprl-dexterous-manipulation">Project Website</a></p>
-                </article>
-            </div> -->
-        </section>
-
-        <section class="mentoring">
-            <h2 class="section-title">Mentoring</h2>
-            <p>I enjoy collaborating with a diverse set of students and researchers. I have had the pleasure of mentoring some highly motivated students at both the undergraduate and PhD levels.</p>
-            
-            <div class="mentoring-grid">
-                <div class="mentoring-column">
-                    <h3>Interns</h3>
-                    <ul>
-                        <li><a href="https://wuphilipp.github.io/">Philipp Wu</a> (UC Berkeley, PhD <span class="role-arrow">&rarr;</span> startup)</li>
-                        <li><a href="https://arjunmajum.github.io/">Arjun Majumdar</a> (GATech, PhD <span class="role-arrow">&rarr;</span> Meta)</li>
-                        <li><a href="https://anuragajay.github.io/">Anurag Ajay</a> (MIT, PhD <span class="role-arrow">&rarr;</span> DeepMind)</li>
-                        <li><a href="https://mandizhao.github.io/">Mandi Zhao</a> (Stanford, PhD)</li>
-                        <li><a href="https://nicklashansen.github.io/">Nicklas Hansen</a> (UCSD, PhD)</li>
-                        <li><a href="https://www.cs.cmu.edu/~sbahl2/">Shikhar Bahl</a> (CMU, PhD <span class="role-arrow">&rarr;</span> Skild.AI)</li>
-                        <li><a href="https://bland.website/">Allan Zhou</a> (Stanford, PhD <span class="role-arrow">&rarr;</span> OpenAI)</li>
-                        <li><a href="https://cs.stanford.edu/~surajn/">Suraj Nair</a> (Stanford, PhD <span class="role-arrow">&rarr;</span> Physical Intelligence)</li>
-                        <li><a href="https://kelym.github.io/">Liyiming Ke</a> (UW, PhD <span class="role-arrow">&rarr;</span> Physical Intelligence)</li>
-                        <li><a href="https://andipeng.com/">Andi Peng</a> (MIT, PhD <span class="role-arrow">&rarr;</span> co-founder, humans&)</li>
-                        <li><a href="https://yuchencui.cc/">Yuchen Cui</a> (UT Austin, PhD <span class="role-arrow">&rarr;</span> Prof at UCLA)</li>
-                    </ul>
-                </div>
-
-                <div class="mentoring-column">
-                    <h3>University Students and AI Residents</h3>
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/aryan-jain-9101/">Aryan Jain</a> (UC Berkeley, BS <span class="role-arrow">&rarr;</span> Tesla Optimus)</li>
-                        <li><a href="https://www.linkedin.com/in/sergio-arnaud-226456198/">Sergio Arnaud</a> (AI Resident, FAIR <span class="role-arrow">&rarr;</span> Meta)</li>
-                        <li><a href="https://rmrafailov.github.io/">Rafael Rafailov</a> (Stanford, MS <span class="role-arrow">&rarr;</span> Reflection AI)</li>
-                        <li><a href="https://www.karmeshyadav.com/">Karmesh Yadav</a> (FAIR <span class="role-arrow">&rarr;</span> Georgia Tech, PhD)</li>
-                        <li><a href="https://kzl.github.io/">Kevin Lu</a> (UC Berkeley, BS <span class="role-arrow">&rarr;</span> Thinking Machines)</li>
-                        <li><a href="https://www.linkedin.com/in/bnevans/">Ben Evans</a> (UW, BS/MS <span class="role-arrow">&rarr;</span> NYU, PhD)</li>
-                        <li><a href="https://www.linkedin.com/in/sarvjeet-singh-ghotra-1a145898/">Sarvjeet Ghotra</a> (IITM Intern <span class="role-arrow">&rarr;</span> MILA, PhD)</li>
-                        <li><a href="https://colinxsummers.com/">Colin Summers</a> (UW, BS/MS <span class="role-arrow">&rarr;</span> UW, PhD)</li>
-                        <li><a href="https://www.linkedin.com/in/catherinecang/">Catherine Cang</a> (UC Berkeley, BS <span class="role-arrow">&rarr;</span> Reflection AI)</li>
-                        <li><a href="https://www.linkedin.com/in/dpjain/">Divye P. Jain</a> (UW, BS/MS <span class="role-arrow">&rarr;</span> Google)</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="teaching">
-            <h2 class="section-title">Teaching</h2>
-            
-            <article class="course">
-                <h3><a href="http://deeprl.cs.washington.edu/">CSE599G: Deep Reinforcement Learning (Instructor)</a></h3>
-                <p>I designed and co-taught a course on deep reinforcement learning at UW in Spring 2018. The course presents a rigorous mathematical treatment of various RL algorithms along with illustrative applications in robotics. Deep RL courses at UW, MIT, and CMU have borrowed and built upon the material I developed for this course.</p>
-            </article>
-
-            <article class="course">
-                <h3><a href="https://courses.cs.washington.edu/courses/cse547/17sp/index.html">CSE547: Machine Learning for Big Data (Teaching Assistant)</a></h3>
-                <p>This is an advanced graduate level course on machine learning with emphasis on machine learning at scale and distributed algorithms. Topics covered include hashing, sketching, streaming, large-scale distributed optimization, federated learning, and contextual bandits. I was the lead TA for this class.</p>
-            </article>
-        </section>
-    </main>
-
-    <footer>
-        <hr>
-        <p class="text-center">© 2024 Aravind Rajeswaran</p>
-    </footer>
+  <!-- Scripts -->
+  <script src="scripts/main.js"></script>
 </body>
 </html>
-
