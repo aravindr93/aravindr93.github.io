@@ -450,6 +450,12 @@ section {
   margin-bottom: var(--space-sm);
 }
 
+.paper-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: var(--space-md) 0;
+}
+
 .paper-links {
   display: flex;
   flex-wrap: wrap;
